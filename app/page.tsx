@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link'
 import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
 import {BsFillSunFill, BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from "next/legacy/image"
@@ -91,18 +92,18 @@ function Portofolio() {
           <p className="text-4xl font-bold text-center text-slate-900">Project Terbaru</p>
         </div>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap items-center justify-center">
-          <div className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
-            <Image src={porto1} width={1920} height={1080} className='rounded-xl' />
-          </div>
-          <div className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
+          <Link href='/EduNine' className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
+              <Image src={porto1} width={1920} height={1080} className='rounded-xl' />
+          </Link>
+          <Link href='/MyLibrary' className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
             <Image src={porto2} width={1920} height={1080} className='rounded-xl' />
-          </div>
-          <div className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
+          </Link>
+          <Link href='/Pasarpedia' className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
             <Image src={porto3} width={1920} height={1080} className='rounded-xl' />
-          </div>
-          <div className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
+          </Link>
+          <Link href="/Maze" className="basis-5/12 shadow-xl hover:shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-xl">
             <Image src={porto4} width={1920} height={1080} className='rounded-xl' />
-          </div>
+          </Link>
         </div>
       </section>
     </>
