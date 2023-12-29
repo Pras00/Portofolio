@@ -2,8 +2,7 @@
 'use client'
 import React, { useState } from 'react';
 import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
-import {BsFillSunFill} from 'react-icons/bs'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {BsFillSunFill, BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from "next/legacy/image"
 import Pras from '../public/Pras.png';
 import porto1 from "../public/EduNine1.png";
@@ -56,9 +55,15 @@ function About() {
         <p className="text-md py-5 leading-6 text-gray-800 dark:text-gray-200">Student at the University of Jember, <br /> who is interested in IT, has a passion for Data Analyst and Web Development.</p>
       </div>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
-        <AiFillGithub className="cursor-pointer text-gray-500 dark:text-gray dark:hover:text-teal-400 hover:text-teal-400" />
+        <a href="https://github.com/Pras00" target='blank'>
+          <AiFillGithub className="cursor-pointer text-gray-500 dark:text-gray dark:hover:text-teal-400 hover:text-teal-400" />
+        </a>
+        <a href="https://www.linkedin.com/in/prasetia-wahyu-ramadhan-188919220/" target='blank'>
         <AiFillLinkedin className="cursor-pointer text-gray-500 dark:text-gray dark:hover:text-teal-400 hover:text-teal-400" />
+        </a>
+        <a href="https://www.instagram.com/prasz_w.r/" target="blank">
         <AiFillInstagram className="cursor-pointer text-gray-500 dark:text-gray dark:hover:text-teal-400 hover:text-teal-400" />
+        </a>
       </div>
       <div className="relative mx-auto bg-gradient-to-b from-teal-500 to-slate-900 rounded-full w-80 h-80 my-20 overflow-hidden shadow-2xl">
         <Image src={Pras} alt="Pras" layout="fill" objectFit="cover" className="mt-10" />
