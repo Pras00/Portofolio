@@ -25,7 +25,13 @@ export default function Home() {
   );
 }
 
-function Navbar({ darkMode, setDarkMode }) {
+
+interface NavbarProps {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function Navbar({ darkMode, setDarkMode } : NavbarProps) {
 
   return (
     <nav className="py-7 px-20 mb-12 flex justify-between box-border">
