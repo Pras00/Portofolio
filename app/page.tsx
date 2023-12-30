@@ -13,7 +13,7 @@ import porto4 from "../public/MazeRunner1.png";
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? 'dark' : ''}>
